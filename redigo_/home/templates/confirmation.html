@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    {% load static %}
+      <title>REDIGO</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-lightness/jquery-ui.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+      
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.css">
+      <!-- <link rel="stylesheet" href='./static/home.css'> -->
+      <link rel="stylesheet" href="{% static '/css/home.css' %}">
+
+
+   </head>
+   <body class="bg-light">
+    <nav class="navbar nav-scroller bg-body shadow-sm">
+      <!-- <img src="https://www.novartis.com/themes/custom/nvs_arctic/logo.svg" alt="novartis" class="logo"> -->
+      <img src="{% static '/img/novartis_logo.svg' %}" alt="novartis" class="logo">
+      <button class="btn" ><a href="/logout/"><img src="{% static '/img/logout.png' %}" class="logout_img"/></a></button>
+      <!-- <button class="btn" ><a href="/logout/"><img src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/25/000000/external-logout-screen-from-the-working-portfolio-of-a-user-classic-bold-tal-revivo.png" class="logout_img"/></a></button> -->
+      </div>
+   </nav>
+    <div class="main_body">
+      <div class="container-fluid">
+        <div class="bookingForm">
+            <br>
+        <div class="right my-3 p-3 bg-body rounded shadow-sm">
+            <p><h5>Confirm submission of following documents</h5></p>
+            <br>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">File Name</th>
+                    <th scope="col">Country</th>
+                    <th scope="col">Document Type</th>
+                    <th scope="col">Document Language</th>
+                    <th scope="col">Document Comment</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <!-- <th scope="row">File1.pdf</th> -->
+                    <td>File1.pdf</td>
+                    <td>US</td>
+                    <td>NPI</td>
+                    <td>English</td>
+                    <td>-</td>
+
+                  </tr>
+                  <tr>
+                    <!-- <th scope="row">File2.pdf</th> -->
+                    <td>File2.pdf</td>
+                    <td>US</td>
+                    <td>FRM</td>
+                    <td>English</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <!-- <th scope="row">File3.pdf</th> -->
+                    <td>File3.pdf</td>
+                    <td>US</td>
+                    <td>NPI</td>
+                    <td>English</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <!-- <th scope="row">File4.pdf</th> -->
+                    <td>File4.pdf</td>
+                    <td>US</td>
+                    <td>FRM</td>
+                    <td>English</td>
+                    <td>-</td>
+                  </tr>
+                </tbody>
+              </table>
+          <div class=" right_buttons">
+            <!-- <button id="review_btn" class="btn ">Review</button> -->
+              <button id="confirm_submit_btn" class="btn ">Confirm Submission</button>
+          </div>
+          <!-- <br> -->
+        </div>
+      </div>
+    </div>
+  </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+           <script src="https://cdn.jsdelivr.net/gh/xcash/bootstrap-autocomplete@v2.3.7/dist/latest/bootstrap-autocomplete.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            <!-- <script src="./static/home.js"></script> -->
+    <script src= "{% static '/js/home.js' %}"></script>
+
+    </body>
+</html>
