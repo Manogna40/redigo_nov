@@ -62,7 +62,8 @@
   .bg-light {
     background-color: #f8f9fa!important;
     /* background-image: url(https://c1.wallpaperflare.com/preview/839/207/808/pill-tablet-pharmacy-medicine.jpg); */
-    background-image: url(https://wallpaperaccess.com/full/321170.jpg);
+    /* background-image: url(https://wallpaperaccess.com/full/321170.jpg); */
+    background-image: url('../img/login_bg.PNG');
     /* opacity:0.8; */
 
     
